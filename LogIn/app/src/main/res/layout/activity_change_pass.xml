@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dell.login.ChangePass">
+    <EditText
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:hint="Old Password"
+        android:ems="10"
+        android:id="@+id/oldPass"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_textbox"
+        android:padding="5dp" />
+
+    <EditText
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:hint="New Password"
+        android:ems="10"
+        android:id="@+id/newPass"
+        android:layout_marginTop="140dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_textbox"
+        android:padding="5dp"
+        android:visibility="visible" />
+    <Button
+        android:background="@drawable/custom_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Change"
+        android:textColor="#ffffff"
+        android:id="@+id/change"
+        android:layout_marginBottom="143dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:onClick="onChange" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/errorChange"
+        android:layout_alignTop="@+id/change"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="73dp" />
+</RelativeLayout>
